@@ -27,6 +27,7 @@ in
     autosuggestion.enable = true;      # ghost text from history
     syntaxHighlighting.enable = true;  # commands turn green when valid
     initContent = ''
+      bindkey -e                       # pin emacs keymap; EDITOR = "nvim" otherwise makes zsh pick vi
       bindkey '^f' autosuggest-accept
     '';
     shellAliases = {
